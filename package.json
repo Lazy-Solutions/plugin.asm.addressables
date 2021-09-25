@@ -1,0 +1,19 @@
+{
+  "name": "plugin.advanced-scene-manager.addressables",
+  "version": "1.0.0",
+  "displayName": "Addressables",
+  "description": "This package provides support for addressables to Advanced Scene Manager.",
+  "unity": "2019.1",
+  "keywords": [
+    "asm",
+    "advanced",
+    "scene",
+    "manager",
+    "addressables"
+  ],
+  "author": {
+    "name": "Advanced Scene Manager",
+    "email": "support@lazy.solutions",
+    "url": "http://lazy.solutions/"
+  }
+}
