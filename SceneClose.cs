@@ -3,7 +3,7 @@ using AdvancedSceneManager.Core.AsyncOperations;
 using System.Collections;
 using UnityEngine.AddressableAssets;
 
-namespace AdvancedSceneManager.Support._Addressables
+namespace AdvancedSceneManager.Plugin._Addressables
 {
 
     internal static class SceneClose

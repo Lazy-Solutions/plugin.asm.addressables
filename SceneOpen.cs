@@ -9,7 +9,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
 
-namespace AdvancedSceneManager.Support._Addressables
+namespace AdvancedSceneManager.Plugin._Addressables
 {
 
     internal static class SceneOpen

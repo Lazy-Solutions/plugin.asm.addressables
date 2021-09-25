@@ -9,7 +9,7 @@ using UnityEditor.AddressableAssets;
 using UnityEditor.AddressableAssets.Settings;
 #endif
 
-namespace AdvancedSceneManager.Support._Addressables
+namespace AdvancedSceneManager.Plugin._Addressables
 {
 
     internal static class AddressablesSupport

@@ -10,10 +10,10 @@ using UnityEditor.AddressableAssets.Settings;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static AdvancedSceneManager.Support._Addressables.AddressablesSupport;
+using static AdvancedSceneManager.Plugin._Addressables.AddressablesSupport;
 using Scene = AdvancedSceneManager.Models.Scene;
 
-namespace AdvancedSceneManager.Support._Addressables
+namespace AdvancedSceneManager.Plugin._Addressables
 {
 
     internal static class UI
