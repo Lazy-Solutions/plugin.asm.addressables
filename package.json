@@ -1,5 +1,5 @@
 {
-  "name": "plugin.advanced-scene-manager.addressables",
+  "name": "plugin.asm.addressables",
   "version": "1.0.0",
   "displayName": "Addressables",
   "description": "This package provides support for addressables to Advanced Scene Manager.",
