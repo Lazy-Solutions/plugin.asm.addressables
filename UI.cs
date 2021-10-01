@@ -61,8 +61,9 @@ namespace AdvancedSceneManager.Plugin._Addressables
 
         static AddressableAssetGroup GetGroup()
         {
-            var g = settings.FindGroup(Profile.current.name);
-            return g ? g : settings.CreateGroup(Profile.current.name, setAsDefaultGroup: false, readOnly: false, postEvent: false, schemasToCopy: null);
+            var name = Profile.current ? Profile.current.name : "ASM";
+            var g = settings.FindGroup(name);
+            return g ? g : settings.CreateGroup(name, setAsDefaultGroup: false, readOnly: false, postEvent: false, schemasToCopy: null);
         }
 
         static VisualElement GetCollectionAddressablesButton(SceneCollection collection)
@@ -130,10 +131,12 @@ namespace AdvancedSceneManager.Plugin._Addressables
                 {
 
                     var group = settings.groups.FirstOrDefault(g => g.entries.Any(e => e.AssetPath == scene.path));
-                    var entry = group?.entries?.FirstOrDefault(e => e?.AssetPath == scene.path);
-                    group.RemoveAssetEntry(entry, postEvent: false);
-
-                    settings.SetDirty(AddressableAssetSettings.ModificationEvent.EntryRemoved, entry, postEvent: true, settingsModified: true);
+                    if (group)
+                    {
+                        var entry = group.entries?.FirstOrDefault(e => e?.AssetPath == scene.path);
+                        group.RemoveAssetEntry(entry, postEvent: false);
+                        settings.SetDirty(AddressableAssetSettings.ModificationEvent.EntryRemoved, entry, postEvent: true, settingsModified: true);
+                    }
 
                 }
 
