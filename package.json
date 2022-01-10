@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "displayName": "Addressables",
   "description": "This package provides support for addressables to Advanced Scene Manager.",
+  "changeLogUrl": "https://assetstore.unity.com/packages/tools/utilities/advanced-scene-manager-174152#releases",
+  "documentationUrl": "https://github.com/Lazy-Solutions/AdvancedSceneManager",
   "unity": "2019.1",
   "keywords": [
     "asm",
