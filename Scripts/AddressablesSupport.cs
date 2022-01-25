@@ -9,6 +9,8 @@ using UnityEditor.AddressableAssets;
 using UnityEditor.AddressableAssets.Settings;
 #endif
 
+[assembly: Preserve]
+[assembly: AlwaysLinkAssembly]
 namespace AdvancedSceneManager.Plugin._Addressables
 {
 
