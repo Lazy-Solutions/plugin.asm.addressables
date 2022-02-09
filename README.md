@@ -1,4 +1,14 @@
-# plugin.asm.package-manager
- The package manager for Advanced Scene Manager. It is a dependency, so no need to download this manually.
+# plugin.asm.addressables
+This is a plugin package for Advanced Scene Manager that provides addressables support.
+
+### Installation
+This package can be installed through the package manager in one of two ways:
+The Plugins and samples package that is installed with Advanced Scene Manager has a list of available plugins and buttons to install them, this is the easiest way.
 
 ![](https://github.com/Lazy-Solutions/plugin.asm.package-manager/blob/main/image/plugins-and-samples-package.png)
+</br></br>
+
+Otherwise you may install it like a regular git package.\
+https://github.com/Lazy-Solutions/plugin.asm.addressables.git
+
+![](https://github.com/Lazy-Solutions/plugin.asm.package-manager/blob/main/image/git-package-menu.png)

@@ -1,10 +1,9 @@
 ﻿#if UNITY_EDITOR
-using AdvancedSceneManager.Editor;
-using AdvancedSceneManager.Editor.Utility;
-using AdvancedSceneManager.Models;
-using AdvancedSceneManager.Utility;
 using System.Collections.Generic;
 using System.Linq;
+using AdvancedSceneManager.Editor;
+using AdvancedSceneManager.Models;
+using AdvancedSceneManager.Utility;
 using UnityEditor;
 using UnityEditor.AddressableAssets.Settings;
 using UnityEditor.UIElements;
@@ -37,7 +36,7 @@ namespace AdvancedSceneManager.Plugin._Addressables
                     valueChanged: e => showButtons = e.newValue,
                     defaultValue: showButtons,
                     tooltip: "Enables or disables addressable buttons in scenes tab (does not disable functionality, saved in EditorPrefs)"),
-                header: SettingsTabProxy.Settings.DefaultHeaders.Appearance);
+                    header: SettingsTab.Settings.DefaultHeaders.Appearance);
         }
 
         static Vector2 mousePos;
