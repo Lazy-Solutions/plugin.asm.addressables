@@ -1,5 +1,5 @@
 ﻿using AdvancedSceneManager.Core;
-using AdvancedSceneManager.Core.AsyncOperations;
+using AdvancedSceneManager.Core.Actions;
 using AdvancedSceneManager.Utility;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
 
-namespace AdvancedSceneManager.Plugin._Addressables
+namespace plugin.asm.addressables
 {
 
     internal static class SceneOpen
@@ -81,7 +81,7 @@ namespace AdvancedSceneManager.Plugin._Addressables
             }
 
             var async = ((AsyncOperationHandle<SceneInstance>)action.openScene.asyncOperation).Result.ActivateAsync();
-                
+
             async.allowSceneActivation = true;
             while (!async.isDone)
             {

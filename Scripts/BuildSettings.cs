@@ -3,7 +3,7 @@
 
 using AdvancedSceneManager.Editor.Utility;
 
-namespace AdvancedSceneManager.Plugin._Addressables
+namespace plugin.asm.addressables
 {
 
     internal static class BuildSettings

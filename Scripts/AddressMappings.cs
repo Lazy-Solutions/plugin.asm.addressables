@@ -11,7 +11,7 @@ using UnityEditor;
 using UnityEditor.AddressableAssets.Settings;
 #endif
 
-namespace AdvancedSceneManager.Plugin._Addressables
+namespace plugin.asm.addressables
 {
 
     [Serializable]

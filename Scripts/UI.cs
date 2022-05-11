@@ -1,18 +1,20 @@
 ﻿#if UNITY_EDITOR
-using System.Collections.Generic;
-using System.Linq;
 using AdvancedSceneManager.Editor;
+using AdvancedSceneManager.Editor.Utility;
 using AdvancedSceneManager.Models;
 using AdvancedSceneManager.Utility;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEditor.AddressableAssets.Settings;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static AdvancedSceneManager.Plugin._Addressables.AddressablesSupport;
+using static plugin.asm.addressables.AddressablesSupport;
 using Scene = AdvancedSceneManager.Models.Scene;
+using SettingsTab = AdvancedSceneManager.Editor.SettingsTab;
 
-namespace AdvancedSceneManager.Plugin._Addressables
+namespace plugin.asm.addressables
 {
 
     internal static class UI
@@ -30,7 +32,7 @@ namespace AdvancedSceneManager.Plugin._Addressables
             SceneManagerWindow.OnGUIEvent += OnGUI;
             ScenesTab.AddExtraButton(GetCollectionAddressablesButton);
             ScenesTab.AddExtraButton(GetSceneAddressablesButton);
-            SettingsTab.Settings.Add(() =>
+            SettingsTab.Settings.Add(
                 new Toggle("Display addressable buttons:").
                 Setup(
                     valueChanged: e => showButtons = e.newValue,

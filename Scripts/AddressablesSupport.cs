@@ -12,7 +12,7 @@ using UnityEditor.AddressableAssets.Settings;
 
 [assembly: Preserve]
 [assembly: AlwaysLinkAssembly]
-namespace AdvancedSceneManager.Plugin._Addressables
+namespace plugin.asm.addressables
 {
 
     internal static class AddressablesSupport
