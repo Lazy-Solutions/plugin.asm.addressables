@@ -13,4 +13,4 @@ https://github.com/Lazy-Solutions/plugin.asm.addressables.git#asm-{version}
 
 > Replace {version} with installed asm version
 
-![](https://github.com/Lazy-Solutions/plugin.asm.package-manager/blob/main/image/git-package-menu.png)
+![](![](https://github.com/Lazy-Solutions/AdvancedSceneManager/blob/main/image/git-package-menu.png?raw=true))
