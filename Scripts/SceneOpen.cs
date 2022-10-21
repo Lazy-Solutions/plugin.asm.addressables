@@ -58,17 +58,19 @@ namespace plugin.asm.addressables
                 throw async.OperationException;
 
             action.openScene = new OpenSceneInfo(action.scene, async.Result.Scene, _sceneManager, async) { isPreloadedOverride = true };
-            scenes.Set(action.scene.path, async);
+            _ = scenes.Set(action.scene.path, async);
 
             action.SetPersistentFlag(action.openScene);
             action.AddScene(action.openScene, _sceneManager);
+
+            action._Done(action.openScene);
 
         }
 
         static IEnumerator Activate(SceneManagerBase _sceneManager, SceneFinishLoadAction action)
         {
 
-            if (!action.openScene?.isOpen ?? false)
+            if (!action.openScene?.isPreloaded ?? false)
             {
                 action._Done();
                 yield break;
